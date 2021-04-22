@@ -1,0 +1,247 @@
+$brown: #5a3825;
+$skin: #ffc49c;
+
+body {
+  background-color: white;  
+}
+
+.border {
+  position: absolute;
+  background-color: #fca7af;
+  width: 550px;
+  height: 450px;
+  z-index: -1;
+  left: -40%;
+  top: -70px;
+}
+
+.hair {
+  background-color: $brown;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  z-index: -1;
+  right: 17%;
+  border-radius: 100% 100% 25% 25% / 100% 100% 80% 80%;
+ bottom: 40px;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: #fca7af;
+    width: 350px;
+    height: 35px;
+    border-radius: 25%;
+    bottom: -20px;
+    right: 25px;
+        
+  }
+   
+}
+
+
+.head {
+  background-color: $skin;
+  width: 300px;
+  height: 280px;
+  border-radius: 60% 60% 50% 50%;
+  margin: 300px auto;
+  position: relative;
+  
+}
+
+
+.eye,
+.eye::before,
+.eye::after,
+.eye-circle, 
+.blush,
+.eyebrow,
+.ear,
+.bangs,
+.nose,
+.mouth,
+.neck,
+.shirt
+{
+  display: inline-block;
+  position: absolute;
+}
+
+.blush {
+  background-color: #fa8072;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  bottom: 20%;
+  
+  &--left {
+    left: 10%;
+  }
+  
+  &--right {
+    right: 10%;
+  }
+}
+
+.eyebrow {
+  background-color: $brown;
+  width: 40px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  bottom: 50%; 
+  
+  &--left {
+    left: 15%;
+  }
+  
+  &--right {
+    right: 15%;
+  }
+}
+
+.ear {
+  background-color: $skin;
+  width: 55px;
+  height: 60px;
+  border-radius: 100%;
+  display: inline-block;
+  bottom: 30%;
+  
+  
+  &--left {
+    left: -13%;
+  }
+  
+  &--right {
+    right: -13%;
+  }
+}
+
+.bangs {
+  background-color: $brown;
+  width: 55%;
+  height: 45%;
+  border-radius: 0 50% 0% 100%;
+  display: inline-block;
+  top: 1%;
+  z-index: 2;
+  transform: rotate(5deg);
+  
+  &--left {
+    left: -2%;
+    top: -1px;
+    transform: scaleX(-1);
+  }
+  
+  &--right {
+    right: -2%;
+  }
+}
+
+
+
+.eye {
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 50%;
+  
+  &::before {
+    content: '';
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    top: 8px;
+    right: 5px;
+    z-index: 1;
+    
+  }
+  
+  &::after {
+    content: '';
+    background-color: $brown;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    left: 8px;
+    bottom: 10px;
+  }
+  
+  &--left {
+    left: 13%;
+  }
+  
+  &--right {
+    right: 13%;
+  }
+  
+}
+
+.nose {
+  background-color: black;
+  width: 5%;
+  height: 3%;
+  border-radius: 50px;
+  top: 67%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.neck {
+  background-color: $skin;
+  width: 50px;
+  height: 50px;
+  border-radius: 0% 0% 100% 100% / 100% 100% 50% 50%;
+  bottom: -30px;
+  left: 127px;
+    
+}
+
+.shirt {
+  background-color: #6495ed;
+  width: 150px;
+  height: 90px;
+  border-radius: 70px 70px 0px 0px;
+  top: 290px;
+  right: 72px;
+  z-index: -1;
+  
+}
+
+.mouth {
+  background-color: black;
+  width: 60px;
+  height: 35px;
+  border-radius: 10px 10px 60px 60px;
+  bottom: 10%;
+  left: 60%;
+  margin-left: -60px;
+  z-index: 1;
+  
+}
+
+.mouth__teeth {
+  position: absolute;
+  background-color: white;
+  width: 60px;
+  height: 12px;
+  bottom: 23px;
+  border-radius: 40px 40px 60px 60px;
+  z-index: 2;
+}
+
+.mouth__inner {
+  position: absolute;
+  background-color: #b22222;
+  width: 40px;
+  height: 25px;
+  border-radius: 45px 45px 60px 60px;
+  bottom: 0px;
+  right: 10px;
+  
+}
